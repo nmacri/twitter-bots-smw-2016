@@ -7,10 +7,10 @@ This is a Scrapy project to scrape talk descriptions from the social media week 
 Items
 =====
 
-The items scraped by this project are talks, and the item is defined in the
+The items scraped by this project are events, and the item is defined in the
 class::
 
-    smwbot.items.Talk
+    smwbot.items.Event
 
 See the source code for more details.
 
