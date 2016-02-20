@@ -1269,7 +1269,7 @@ difference between these two modes of knowledge.
 
 
 
-IV. Of the Difference Between Analytical and Synthetical Judgements.
+
 
 In all judgements wherein the relation of a subject to the predicate is
 cogitated (I mention affirmative judgements only here; the application
@@ -1464,7 +1464,7 @@ of the science, consists merely of synthetical propositions a priori.
 
 
 
-VI. The Universal Problem of Pure Reason.
+
 
 It is extremely advantageous to be able to bring a number of
 investigations under the formula of a single problem. For in this
@@ -1720,14 +1720,14 @@ thought.
 
 
 
-I. TRANSCENDENTAL DOCTRINE OF ELEMENTS.
+
 
 
 
 FIRST PART. TRANSCENDENTAL AESTHETIC.
 
 
-SS I. Introductory.
+SS 
 
 In whatsoever mode, or by whatsoever means, our knowledge may relate
 to objects, it is at least quite clear that the only manner in which it
@@ -1812,10 +1812,10 @@ sensuous intuition, as principles of knowledge a priori, namely, space
 and time. To the consideration of these we shall now proceed.
 
 
-SECTION I. Of Space.
+ 
 
 
-SS 2. Metaphysical Exposition of this Conception.
+
 
 By means of the external sense (a property of the mind), we represent
 to ourselves objects as without us, and these all in space. Herein alone
@@ -1885,7 +1885,7 @@ produced to infinity. Consequently, the original representation of space
 is an intuition a priori, and not a conception.
 
 
-SS 3. Transcendental Exposition of the Conception of Space.
+
 
 By a transcendental exposition, I mean the explanation of a conception,
 as a principle, whence can be discerned the possibility of other
@@ -1920,7 +1920,7 @@ although in appearance it may be similar to ours, can with the utmost
 certainty be distinguished from it by these marks.
 
 
-SS 4. Conclusions from the foregoing Conceptions.
+
 
 (a) Space does not represent any property of objects as things in
 themselves, nor does it represent them in their relations to each other;
@@ -2009,10 +2009,10 @@ representations, nor ever can be, but respecting which, in experience,
 no inquiry is ever made.
 
 
-SECTION II. Of Time.
+ 
 
 
-SS 5. Metaphysical Exposition of this Conception.
+
 
 1. Time is not an empirical conception. For neither coexistence nor
 succession would be perceived by us, if the representation of time did
@@ -2082,7 +2082,7 @@ which is not a little fruitful.
 
 
 
-SS 7. Conclusions from the above Conceptions.
+
 
 (a) Time is not something which subsists of itself, or which inheres
 in things as an objective determination, and therefore remains, when
@@ -2173,7 +2173,7 @@ subject, see the remark in Section I (SS 4)
 
 
 
-SS 8. Elucidation.
+
 
 Against this theory, which grants empirical reality to time, but denies
 to it absolute and transcendental reality, I have heard from intelligent
@@ -2297,7 +2297,7 @@ of its determinations, in one word, experience, is necessary.
 
 
 
-SS 9. General Remarks on Transcendental Aesthetic.
+
 
 I. In order to prevent any misunderstanding, it will be requisite,
 in the first place, to recapitulate, as clearly as possible, what
@@ -2622,7 +2622,7 @@ as any proof of the truth of our aesthetical theory.
 
 
 
-SS 10. Conclusion of the Transcendental Aesthetic.
+
 
 We have now completely before us one part of the solution of the grand
 general problem of transcendental philosophy, namely, the question: "How
@@ -2642,7 +2642,7 @@ SECOND PART. TRANSCENDENTAL LOGIC.
 
 INTRODUCTION. Idea of a Transcendental Logic.
 
-I. Of Logic in General.
+
 
 Our knowledge springs from two main sources in the mind, first of which
 is the faculty or power of receiving representations (receptivity for
@@ -2759,7 +2759,7 @@ principles.
 
 
 
-II. Of Transcendental Logic.
+
 
 General logic, as we have seen, makes abstraction of all content of
 cognition, that is, of all relation of cognition to its object, and
@@ -2814,7 +2814,7 @@ to objects.
 
 
 
-III. Of the Division of General Logic into Analytic and Dialectic.
+
 
 The old question with which people sought to push logicians into a
 corner, so that they must either have recourse to pitiful sophisms or
@@ -2994,9 +2994,9 @@ and the other the principles of pure understanding.
 
 
 
-BOOK I.
 
-SS 2. Analytic of Conceptions.
+
+
 
 By the term Analytic of Conceptions, I do not understand the analysis
 of these, or the usual process in philosophical investigations of
@@ -3015,10 +3015,9 @@ attaching to them, are set forth in their unalloyed purity.
 
 
 
-CHAPTER I. Of the Transcendental Clue to the Discovery of all Pure
-Conceptions of the Understanding.
 
-SS 3. Introductory.
+
+
 
 When we call into play a faculty of cognition, different conceptions
 manifest themselves according to the different circumstances, and
@@ -3045,7 +3044,7 @@ completeness of the system of all be determined a priori--both which
 would otherwise have been dependent on mere choice or chance.
 
 
-SS 4. SECTION 1. Of defined above Use of understanding in General.
+
 
 The understanding was defined above only negatively, as a non-sensuous
 faculty of cognition. Now, independently of sensibility, we cannot
@@ -3093,7 +3092,7 @@ exhibit the functions of unity in judgements. And that this may be
 effected very easily, the following section will show.
 
 
-SS 5. SECTION II. Of the Logical Function of the Understanding in
+ Of the Logical Function of the Understanding in
 Judgements.
 
 If we abstract all the content of a judgement, and consider only the
@@ -3254,7 +3253,7 @@ so many momenta of thought.
      the sequel.]
 
 
-SS 6. SECTION III. Of the Pure Conceptions of the Understanding, or                   Categories.
+SS 6.  
 
 General logic, as has been repeatedly said, makes abstraction of all
 content of cognition, and expects to receive representations from some
@@ -3574,12 +3573,10 @@ laws of the consistency of cognition with itself.
 
 
 
-CHAPTER II Of the Deduction of the Pure Conceptions of the
-Understanding.
 
 
-SS 9. SECTION I Of the Principles of a Transcendental Deduction in
-general.
+
+
 
 Teachers of jurisprudence, when speaking of rights and claims,
 distinguish in a cause the question of right (quid juris) from the
@@ -3761,7 +3758,7 @@ experience.
 
 
 
-SS 10. Transition to the Transcendental Deduction of the Categories.
+
 
 There are only two possible ways in which synthetical representation and
 its objects can coincide with and relate necessarily to each other,
@@ -3861,8 +3858,7 @@ and never as mere predicate. And so with all the other categories.
 
 
 
-SS 11. SECTION II Transcendental Deduction of the pure Conceptions of
-the Understanding.
+
 
 Of the Possibility of a Conjunction of the manifold representations
 given by Sense.
@@ -3921,7 +3917,7 @@ its logical use.
 
 
 
-SS 12. Of the Originally Synthetical Unity of Apperception.
+
 
 The "I think" must accompany all my representations, for otherwise
 something would be represented in me which could not be thought; in
@@ -4021,8 +4017,7 @@ but that only by means of a synthesis.
 
 
 
-SS 13. The Principle of the Synthetical Unity of Apperception is the
-highest Principle of all exercise of the Understanding.
+
 
 The supreme principle of the possibility of all intuition in relation to
 sensibility was, according to our transcendental aesthetic, that all the
@@ -4103,7 +4098,7 @@ intuition, but with forms different from those of space and time.
 
 
 
-SS 14. What Objective Unity of Self-consciousness is.
+
 
 It is by means of the transcendental unity of apperception that all
 the manifold, given in an intuition is united into a conception of
@@ -4131,8 +4126,7 @@ experience, not necessarily and universally valid.
 
 
 
-SS 15. The Logical Form of all Judgements consists in the Objective
-Unity of Apperception of the Conceptions contained therein.
+
 
 I could never satisfy myself with the definition which logicians give of
 a judgement. It is, according to them, the representation of a relation
@@ -4209,7 +4203,7 @@ subject to the categories of the understanding.
 
 
 
-SS 17. Observation.
+
 
 The manifold in an intuition, which I call mine, is represented by means
 of the synthesis of the understanding, as belonging to the necessary
@@ -4262,8 +4256,7 @@ and space are the only forms of our intuition.
 
 
 
-SS 18. In Cognition, its Application to Objects of Experience is
-the only legitimate use of the Category.
+
 
 To think an object and to cognize an object are by no means the same
 thing. In cognition there are two elements: firstly, the conception,
@@ -4346,8 +4339,7 @@ But of this more in the sequel.
 
 
 
-SS 20. Of the Application of the Categories to Objects of the
-Senses in general.
+
 
 The pure conceptions of the understanding apply to objects of intuition
 in general, through the understanding alone, whether the intuition be
@@ -4569,8 +4561,7 @@ would cognize itself, if its intuition were intellectual.
 
 
 
-SS 22. Transcendental Deduction of the universally possible employment
-in experience of the Pure Conceptions of the Understanding.
+
 
 In the metaphysical deduction, the a priori origin of categories was
 proved by their complete accordance with the general logical of thought;
@@ -4715,8 +4706,7 @@ object thereof, these a priori laws are our only rule and guide.
 
 
 
-SS 23. Result of this Deduction of the Conceptions of the
-Understanding.
+
 
 We cannot think any object except by means of the categories; we cannot
 cognize any thought except by means of intuitions corresponding to these
@@ -4853,8 +4843,6 @@ particularly my present purpose.
 
 
 
-INTRODUCTION. Of the Transcendental Faculty of judgement in General.
-
 If understanding in general be defined as the faculty of laws or rules,
 the faculty of judgement may be termed the faculty of subsumption under
 these rules; that is, of distinguishing whether this or that does or
@@ -4955,8 +4943,7 @@ the principles of the pure understanding.
 TRANSCENDENTAL DOCTRINE OF THE FACULTY OF JUDGEMENT OR, ANALYTIC OF
 PRINCIPLES.
 
-CHAPTER I. Of the Schematism at of the Pure Conceptions of the
-Understanding.
+
 
 In all subsumptions of an object under a conception, the representation
 of the object must be homogeneous with the conception; in other words,
@@ -5205,7 +5192,7 @@ realizes the understanding and restricts it.
 
 
 
-CHAPTER II. System of all Principles of the Pure Understanding.
+CHAPTER 
 
 In the foregoing chapter we have merely considered the general
 conditions under which alone the transcendental faculty of judgement
@@ -5258,7 +5245,7 @@ eyes in its true nature.
 
 SYSTEM OF THE PRINCIPLES OF THE PURE UNDERSTANDING.
 
-SECTION I. Of the Supreme Principle of all Analytical Judgements.
+ 
 
 Whatever may be the content of our cognition, and in whatever manner
 our cognition may be related to its object, the universal, although only
@@ -5334,7 +5321,7 @@ analytical proposition.
 
 
 
-SECTION II. Of the Supreme Principle of all Synthetical Judgements.
+ 
 
 The explanation of the possibility of synthetical judgements is a task
 with which general logic has nothing to do; indeed she needs not even
@@ -5442,7 +5429,7 @@ judgement."
 
 
 
-SECTION III. Systematic Representation of all Synthetical Principles of
+ III. Systematic Representation of all Synthetical Principles of
 the Pure Understanding.
 
 That principles exist at all is to be ascribed solely to the pure
@@ -7684,8 +7671,7 @@ relation.
 
 
 
-CHAPTER III Of the Ground of the Division of all Objects into Phenomena
-and Noumena.
+
 
 We have now not only traversed the region of the pure understanding and
 carefully surveyed every part of it, but we have also measured it, and
@@ -8863,7 +8849,7 @@ TRANSCENDENTAL LOGIC. SECOND DIVISION.
 
 TRANSCENDENTAL DIALECTIC. INTRODUCTION.
 
-I. Of Transcendental Illusory Appearance.
+
 
 We termed dialectic in general a logic of appearance. This does not
 signify a doctrine of probability; for probability is truth, only
@@ -8985,7 +8971,7 @@ which it becomes necessary continually to remove.
 
 
 
-II. Of Pure Reason as the Seat of Transcendental Illusory Appearance.
+
 
 A. OF REASON IN GENERAL.
 
@@ -9247,7 +9233,7 @@ second of transcendent and dialectical syllogisms.
 
 
 
-BOOK I. -- OF THE CONCEPTIONS OF PURE REASON.
+BOOK 
 
 The conceptions of pure reason--we do not here speak of the possibility
 of them--are not obtained by reflection, but by inference or
@@ -9291,7 +9277,7 @@ first place explain and justify.
 
 
 
-SECTION I--Of Ideas in General.
+ I--Of Ideas in General.
 
 Despite the great wealth of words which European languages possess, the
 thinker finds himself often at a loss for an expression exactly suited
@@ -9488,7 +9474,7 @@ It ought not even to be called a notion or conception of understanding.
 
 
 
-SECTION II. Of Transcendental Ideas.
+ 
 
 Transcendental analytic showed us how the mere logical form of
 our cognition can contain the origin of pure conceptions a priori,
@@ -9753,7 +9739,7 @@ grounds, which is itself unconditionally true.
 
 
 
-SECTION III. System of Transcendental Ideas.
+ 
 
 We are not at present engaged with a logical dialectic, which makes
 complete abstraction of the content of cognition and aims only at
@@ -9944,7 +9930,7 @@ ideal of pure reason.
 
 
 
-CHAPTER I. Of the Paralogisms of Pure Reason.
+CHAPTER 
 
 The logical paralogism consists in the falsity of an argument in respect
 of its form, be the content what it may. But a transcendental paralogism
@@ -10693,7 +10679,7 @@ We shall have occasion to perceive their utility in the sequel.
 
 
 
-CHAPTER II. The Antinomy of Pure Reason.
+CHAPTER 
 
 We showed in the introduction to this part of our work, that all
 transcendental illusion of pure reason arose from dialectical arguments,
@@ -10758,7 +10744,7 @@ idea which cannot be reconciled with phenomena and experience.
 
 
 
-SECTION I. System of Cosmological Ideas.
+ 
 
 That We may be able to enumerate with systematic precision these ideas
 according to a principle, we must remark, in the first place, that it
@@ -11039,7 +11025,7 @@ be of some value.
 
 
 
-SECTION II. Antithetic of Pure Reason.
+ 
 
 Thetic is the term applied to every collection of dogmatical
 propositions. By antithetic I do not understand dogmatical assertions
@@ -11978,7 +11964,7 @@ of view from which the motions of the moon were considered.
 
 
 
-SECTION III. Of the Interest of Reason in these Self-contradictions.
+ 
 
 We have thus completely before us the dialectical procedure of the
 cosmological ideas. No possible experience can present us with an object
@@ -12296,7 +12282,7 @@ condition with themselves--the condition of weak and fallible men.
 
 
 
-SECTION IV. Of the necessity imposed upon Pure Reason of
+ IV. Of the necessity imposed upon Pure Reason of
 presenting a Solution of its Transcendental Problems.
 
 To avow an ability to solve all problems and to answer all questions
@@ -12486,7 +12472,7 @@ upon which the question rests.
 
 
 
-SECTION V. Sceptical Exposition of the Cosmological Problems
+ V. Sceptical Exposition of the Cosmological Problems
 presented in the four Transcendental Ideas.
 
 We should be quite willing to desist from the demand of a dogmatical
@@ -12612,7 +12598,7 @@ us astray from the truth.
 
 
 
-SECTION VI. Transcendental Idealism as the Key to theSolution
+ VI. Transcendental Idealism as the Key to theSolution
 of Pure Cosmological Dialectic.
 
 In the transcendental aesthetic we proved that everything intuited in
@@ -12749,7 +12735,7 @@ misinterpretation of our empirical conceptions.
 
 
 
-SECTION VII. Critical Solution of the Cosmological Problem.
+ 
 
 The antinomy of pure reason is based upon the following dialectical
 argument: "If that which is conditioned is given, the whole series
@@ -12977,7 +12963,7 @@ have still reaped a great advantage in the correction of our judgements
 on these subjects of thought.
 
 
-SECTION VIII. Regulative Principle of Pure Reason in relation to the
+ VIII. Regulative Principle of Pure Reason in relation to the
 Cosmological Ideas.
 
 The cosmological principle of totality could not give us any certain
@@ -13136,7 +13122,7 @@ in the following section.
 
 
 
-SECTION IX. Of the Empirical Use of the Regulative Principle of
+ IX. Of the Empirical Use of the Regulative Principle of
 Reason with regard to the Cosmological Ideas.
 
 We have shown that no transcendental use can be made either of the
@@ -14257,9 +14243,9 @@ following chapter.
 
 
 
-CHAPTER III. The Ideal of Pure Reason.
+CHAPTER 
 
-SECTION I. Of the Ideal in General.
+ 
 
 We have seen that pure conceptions do not present objects to the mind,
 except under sensuous conditions; because the conditions of objective
@@ -14341,7 +14327,7 @@ on this account transcendent.
 
 
 
-SECTION II. Of the Transcendental Ideal (Prototypon Trancendentale).
+ 
 
 Every conception is, in relation to that which is not contained in
 it, undetermined and subject to the principle of determinability. This
@@ -14619,7 +14605,7 @@ conscious intelligence.]
 
 
 
-SECTION III. Of the Arguments employed by Speculative Reason in
+ III. Of the Arguments employed by Speculative Reason in
 Proof of the Existence of a Supreme Being.
 
 Notwithstanding the pressing necessity which reason feels, to form some
@@ -14802,7 +14788,7 @@ of the empirical element.
 
 
 
-SECTION IV. Of the Impossibility of an Ontological Proof of the
+ IV. Of the Impossibility of an Ontological Proof of the
 Existence of God.
 
 It is evident from what has been said that the conception of an
@@ -15046,7 +15032,7 @@ account.
 
 
 
-SECTION V. Of the Impossibility of a Cosmological Proof of the
+ V. Of the Impossibility of a Cosmological Proof of the
 Existence of God.
 
 It was by no means a natural course of proceeding, but, on the contrary,
@@ -15438,7 +15424,7 @@ condition of existence.
 
 
 
-SECTION VI. Of the Impossibility of a Physico-Theological Proof.
+ 
 
 If, then, neither a pure conception nor the general experience of an
 existing being can provide a sufficient basis for the proof of the
@@ -15678,7 +15664,7 @@ the empirical exercise of the understanding is possible at all.
 
 
 
-SECTION VII. Critique of all Theology based upon Speculative
+ VII. Critique of all Theology based upon Speculative
 Principles of Reason.
 
 If by the term theology I understand the cognition of a primal being,
@@ -17346,7 +17332,7 @@ application of which he is to learn only at some future time.
 
 
 
-CHAPTER I. The Discipline of Pure Reason.
+CHAPTER 
 
 Negative judgements--those which are so not merely as regards their
 logical form, but in respect of their content--are not commonly held in
@@ -17441,7 +17427,7 @@ sphere.
 
 
 
-SECTION I. The Discipline of Pure Reason in the Sphere of Dogmatism.
+ 
 
 The science of mathematics presents the most brilliant example of the
 extension of the sphere of pure reason without the aid of experience.
@@ -17778,7 +17764,7 @@ circumscribed and limited to this particular department of knowledge,
 cannot turn a deaf ear to the warnings of philosophy, or set himself
 above its direction.
 
-I. Of Definitions. A definition is, as the term itself indicates, the
+ A definition is, as the term itself indicates, the
 representation, upon primary grounds, of the complete conception of
 a thing within its own limits.* Accordingly, an empirical conception
 cannot be defined, it can only be explained. For, as there are in such
@@ -18030,7 +18016,7 @@ command.
 
 
 
-SECTION II. The Discipline of Pure Reason in Polemics.
+ 
 
 Reason must be subject, in all its operations, to criticism, which
 must always be permitted to exercise its functions without restraint;
@@ -18707,7 +18693,7 @@ possessions.
 
 
 
-SECTION III. The Discipline of Pure Reason in Hypothesis.
+ 
 
 This critique of reason has now taught us that all its efforts to extend
 the bounds of knowledge, by means of pure speculation, are utterly
@@ -18982,7 +18968,7 @@ contradictions.
 
 
 
-SECTION IV. The Discipline of Pure Reason in Relation to Proofs.
+ 
 
 It is a peculiarity, which distinguishes the proofs of transcendental
 synthetical propositions from those of all other a priori synthetical
@@ -19253,7 +19239,7 @@ proper sphere--that of practical principles.
 
 
 
-CHAPTER II. The Canon of Pure Reason.
+CHAPTER 
 
 It is a humiliating consideration for human reason that it is
 incompetent to discover truth by means of pure speculation, but, on the
@@ -19303,7 +19289,7 @@ This canon we now proceed to investigate.
 
 
 
-SECTION I. Of the Ultimate End of the Pure Use of Reason.
+ 
 
 There exists in the faculty of reason a natural desire to venture beyond
 the field of experience, to attempt to reach the utmost bounds of all
@@ -19449,7 +19435,7 @@ to treat of practical reason. Besides, we have already discussed this
 subject in the antinomy of pure reason.
 
 
-SECTION II. Of the Ideal of the Summum Bonum as a Determining
+ II. Of the Ideal of the Summum Bonum as a Determining
 Ground of the Ultimate End of Pure Reason.
 
 Reason conducted us, in its speculative use, through the field of
@@ -19802,7 +19788,7 @@ pervert and frustrate the ultimate ends of reason.
 
 
 
-SECTION III. Of Opinion, Knowledge, and Belief.
+ 
 
 The holding of a thing to be true is a phenomenon in our understanding
 which may rest on objective grounds, but requires, also, subjective
@@ -20065,7 +20051,7 @@ guidance which nature has vouchsafed to the meanest understanding.
 
 
 
-CHAPTER III. The Architectonic of Pure Reason.
+CHAPTER 
 
 By the term architectonic I mean the art of constructing a system.
 Without systematic unity, our knowledge cannot become science; it will
@@ -20511,7 +20497,7 @@ highest possible aim--the happiness of all mankind.
 
 
 
-CHAPTER IV. The History of Pure Reason.
+CHAPTER 
 
 This title is placed here merely for the purpose of designating a
 division of the system of pure reason of which I do not intend to treat

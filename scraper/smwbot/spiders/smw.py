@@ -72,7 +72,7 @@ class SmwSpider(Spider):
         # Serialize Output
         json_item = json.dumps(dict(item))
 
-        f = open('output.ldjson','ab')
+        f = open('../data/smw/talks.ldjson','ab')
         f.write('\n')
         f.write(json_item)
         f.close()
