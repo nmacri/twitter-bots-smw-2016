@@ -38,20 +38,43 @@ class SmwSpider(Spider):
 
 
     def parse_detail_page(self, response):
-
+        """
+        Parses structured data from talk detail pages on 
+        http://socialmediaweek.org/newyork/events/.*
+        and serializes it in line-denomenated json
+        """
         item = response.meta['item']
-
         sel = Selector(response)
-        paragraphs = sel.css('#details-content > p')
+
+        # Talk Descriptions
+        paragraphs = sel.css('#content')
         description = ''
         for p in paragraphs:
-            description = description + p.css('p::text').extract_first().strip()
+            p_text = p.css('p::text').extract_first().strip().encode('ascii', 'ignore')
+            description = description + p_text
 
         item['description'] = description
 
-        print description
+        # Author Twitter Handles
+        tw_buttons = sel.css('.side-speakers .button-twitter').xpath('@href').extract()
+        tw_handles = [b.replace("http://twitter.com/","").replace("https://twitter.com/","")
+                        for b in tw_buttons]
+        tw_handles = list(set([h for h in tw_handles if h !='']))
+        item['performer'] = tw_handles
+
+        # Event Hashtag
+        tw_hashtag = sel.css('a[href*="twitter.com/search?q="]::text').extract_first()
+        item['broadcastOfEvent'] = tw_hashtag
+
+        # Scheduled Time
+        item['startDate'] = sel.css('time[itemprop="startDate"]').xpath('@content').extract_first()
+
+        # Serialize Output
+        json_item = json.dumps(dict(item))
 
         f = open('output.ldjson','ab')
-        f.write(json.dumps(item))
+        f.write('\n')
+        f.write(json_item)
         f.close()
+
         return item
