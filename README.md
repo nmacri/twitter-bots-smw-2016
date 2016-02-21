@@ -43,7 +43,7 @@ http://socialmediaweek.org/newyork/events/twitter-bots/
 
 ### Bot Module
 
-- [ ] Build a basic `TwitterBot` class that can be used like this
+- [x] Build a basic `TwitterBot` class that can be used like this
 
 ```python
 bot1 = TwitterBot(**kwds)
@@ -95,8 +95,6 @@ listener.get_recent_tweets(6) #retreives tweets
 
 ### Notebooks
 - [x] Setting Up a Twitter Bot in 5 Easy Steps
-- [ ] What's a Twitter bot Anyway?: An MVP Twitter bot that anyone can use
+- [ ] What's a Twitter bot anyway?: An MVP Twitter bot that anyone can use
 - [ ] What should your bot say?: Markov is just fancy name for autocomplete
 - [ ] Kanye autocompletes your social strategy: A simple rules-based markov bot for Socal Media Week.
-
-
