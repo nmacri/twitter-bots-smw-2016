@@ -1,9 +1,24 @@
-Let's Build a Twitter Bot Together
+Let's Build a Twitter Bot Together!
 =========
 
 Slides, Examples and code for "build-a-bot workshop" at Social Media Week NYC 2016
 
 http://socialmediaweek.org/newyork/events/twitter-bots/
+
+## Getting Started
+
+0. `git clone https://github.com/nmacri/twitter-bots-smw-2016.git` or [download as a zip file](https://github.com/nmacri/twitter-bots-smw-2016/archive/master.zip)
+
+**:confused: "huh, git what?"** Don't sweat it
+- the slides for the talk [are here]() 
+- and the bot we'll make together [is here]()
+
+1. cd to your project folder.  in my case it's `cd ~/twitter-bots-smw-2016`
+2. If you haven't already, install [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html) 
+3. Create a virtual environment for this project to run in: `virtualenv venv`.This will create an isolated Python environment for this project to run in.  it can be activated using `source venv/bin/activate`
+4. Once you've activated your virtualenv, you'll need to install some dependencies: `pip install -r requirements.txt`
+5. Start with the jupyter notebooks in '/notebooks': `cd notebooks && kupyter notebook` or if you prefer you can view them online [here]()
+
 
 ## TODOs
 
