@@ -1,24 +1,31 @@
 Let's Build a Twitter Bot Together!
 =========
 
-Slides, Examples and code for "build-a-bot workshop" at Social Media Week NYC 2016
+Slides, examples and code for "build-a-bot workshop" at Social Media Week NYC 2016.
 
 http://socialmediaweek.org/newyork/events/twitter-bots/
 
 ## Getting Started
 
-0. `git clone https://github.com/nmacri/twitter-bots-smw-2016.git` or [download as a zip file](https://github.com/nmacri/twitter-bots-smw-2016/archive/master.zip)
+### Tutorial Notebooks
+1. [Setting Up a Twitter Bot in 5 Easy Steps](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb)
+ 1. [Get you project directory organized](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#1.-First-things-first,-let's-get-our-project-directory-organized)
+ 2. [Register a Twitter app](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#2.-Good,-that-went-smoothly,-now-let's-go-deal-with-twitter)
+ 3. [Create a Twitter account](https://twitter.com/signup)
+ 4. [OAuth secret handshake](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#4.-Final-OAuth-step:-Secret-handshake!)
+ 5. [Store your secrets somewhere safe](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#5.-Store-your-secrets-somewhere-safe)
+2. What's a Twitter bot Anyway?: An MVP Twitter bot that anyone can use
+3. What should your bot say?: Markov is just fancy name for autocomplete
+4. Kanye autocompletes your social strategy: A simple rules-based markov bot for Socal Media Week.
 
-**:confused: "huh, git what?"** Don't sweat it
-- the slides for the talk [are here]() 
-- and the bot we'll make together [is here]()
+### Using this Repo to build your own bot
 
-1. cd to your project folder.  in my case it's `cd ~/twitter-bots-smw-2016`
-2. If you haven't already, install [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html) 
-3. Create a virtual environment for this project to run in: `virtualenv venv`.This will create an isolated Python environment for this project to run in.  it can be activated using `source venv/bin/activate`
-4. Once you've activated your virtualenv, you'll need to install some dependencies: `pip install -r requirements.txt`
-5. Start with the jupyter notebooks in '/notebooks': `cd notebooks && kupyter notebook` or if you prefer you can view them online [here]()
-
+1. `git clone https://github.com/nmacri/twitter-bots-smw-2016.git` :confused: "huh, git what?"--- don't sweat it, you can [download as a zip file](https://github.com/nmacri/twitter-bots-smw-2016/archive/master.zip) instead.
+2. cd to your project folder.  in my case it's `cd ~/twitter-bots-smw-2016`
+3. If you haven't already, install [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html) 
+4. Create a virtual environment for this project to run in: `virtualenv venv`.This will create an isolated Python environment for this project to run in.  it can be activated using `source venv/bin/activate`
+5. Once you've activated your virtualenv, you'll need to install some dependencies: `pip install -r requirements.txt`
+6. Start by working through the jupyter notebooks in '/notebooks': `cd notebooks && jupyter notebook` (or if you prefer you can [view them online](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/))
 
 ## TODOs
 
@@ -73,12 +80,17 @@ listener.get_recent_tweets(6) #retreives tweets
 
 ### Create Twitter Accounts
 
-- [ ] production account
-- [ ] staging account
-- [ ] 3-4 test interlocutors
+- [x] production account
+- [x] staging account
+- [x] 3-4 test interlocutors
 
 ### Testing Plans
 - [ ] A fake dataset for testing schedule-driven tweets
-- [ ] 
+
+### Notebooks
+- [x] Setting Up a Twitter Bot in 5 Easy Steps
+- [ ] What's a Twitter bot Anyway?: An MVP Twitter bot that anyone can use
+- [ ] What should your bot say?: Markov is just fancy name for autocomplete
+- [ ] Kanye autocompletes your social strategy: A simple rules-based markov bot for Socal Media Week.
 
 
