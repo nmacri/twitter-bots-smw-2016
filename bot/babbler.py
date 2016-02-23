@@ -1,24 +1,75 @@
 from pymarkovchain import MarkovChain
-
-
-f = open('data/smw/talks.ldjson','rb')
-talks = [json.loads(l) for l in f.readlines()]
-talk_text = "\n".join([t['name']+" "+t['description'] for t in talks])
-f.close()
-
-f = open('data/kanye/quotes.txt','rb')
-yeezy_text = "\n".join([l for l in f.readlines()])
-f.close()
+import hashlib
+import random
+import string, re
 
 class MarkovBabbler(object):
     """docstring for MarkovBabbler"""
-    def __init__(self, training_data):
+    def __init__(self, training_text):
         super(MarkovBabbler, self).__init__()
-        self.arg = arg
+        ascii_safe_text = ''.join([i if ord(i) < 128 else ' ' for i in training_text])
+        self.training_text = ascii_safe_text
+        self.train(training_text)
+
+        f = open('data/badwords/full-list-of-bad-words-banned-by-google.txt','rb')
+        self.bad_words = [w.replace("\r\n","") for w in f.readlines()]
+        f.close()
+
+
+    def generate_candidate(self, seed=None):
+        if seed:
+            return self.mc.generateStringWithSeed(seed)
+        else:
+            return self.mc.generateString()
+
+    def is_valid(self, text_candidate):
+        try:
+            for bad_word in self.bad_words:
+                if bad_word in set([w.lower() for w in text_candidate.split(' ')]):
+                    print "Text Candidate rejected for dirty words: %s" % text_candidate
+                    return False
+
+            if len(text_candidate) > 140:
+                print "Text Candidate rejected for length > 140: %s" % text_candidate
+                return False
+
+            if text_candidate == '':
+                print "Text Candidate rejected for 0 length"
+                return False
+        except Exception, e:
+            print str(e)
+            return False
+        
+        return True
 
     def generate(self, seed=None):
-        return "example text"
+        valid = False
+        tries = 0
+        while not valid and tries < 100:
+            try:
+                text_candidate = self.generate_candidate(seed=seed)
+                valid = self.is_valid(text_candidate)
+                tries += 1
+            except Exception, e:
+                tries += 1
+                continue
 
-    def train():
-        pass
+        if tries < 100:
+            return text_candidate
+        else:
+            raise Exception("can not generate text efficiently too many tries")
+
+    def generate_seed(self):
+        seed = " ".join(self.generate().strip().split(" ")[0:random.randint(2,5)])
+        regex = re.compile('[%s]' % re.escape(string.punctuation))
+        return regex.sub('', seed).capitalize()
+
+    def train(self, training_text):
+        m = hashlib.md5(self.training_text)
+        self.name = m.hexdigest()
+        self.database_filepath = 'data/markov/%s' % self.name
+
+        self.mc = MarkovChain(dbFilePath=self.database_filepath)
+        self.mc.generateDatabase(training_text, n=2)
         
+

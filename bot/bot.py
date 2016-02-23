@@ -46,7 +46,7 @@ class TwitterBot(object):
 
 
     def generate_text(self, in_reply_to=None):
-        pass
+        return "you should overide this method"
         
     def has_replied(self, tweet):
         sql = """
