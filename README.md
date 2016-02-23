@@ -37,9 +37,9 @@ http://socialmediaweek.org/newyork/events/twitter-bots/
 
 ###  Text Corpora:
 - [x] Social Media Week Talk Descriptions
-- [ ] Social Media Week Tweet Archive
-- [ ] Kanye West Quotes
-- [ ] Kanye West Tweets
+- [x] Social Media Week Tweet Archive
+- [x] Kanye West Quotes
+- [x] Kanye West Tweets
 
 ### Bot Module
 
@@ -56,7 +56,7 @@ tweet = bot1.tweet(text)
 reply_tweet = bot2.tweet(reply_text, in_reply_to=tweet)
 ```
 
-- [ ] Build a bot-specific datastore for tweets that can be used like this
+- [x] Build a bot-specific datastore for tweets that can be used like this
 
 ```python
 bot2.has_replied(tweet) #True
@@ -65,12 +65,11 @@ bot1.has_replied(reply_tweet) #False
 
 ### Listener Module
 
-- [ ] Build a basic `TwitterListener` class that can be used like this
+- [x] Build a basic `TwitterListener` class that can be used like this
 
 ```python
 listener = TwitterListener(**kwds)
 
-listener.subscribe() # Subscribes to a twitter stream
 listener.backfill(50) # hits REST apis to collect relevant tweets 
 
 listener.get_recent_tweets(6) #retreives tweets
@@ -78,11 +77,9 @@ listener.get_recent_tweets(6) #retreives tweets
 
 ### Datastore Module
 
-- [ ] Build a basic local datastore that can support the storage needs of other classes.  It will need:
- - [ ] A `tweets` table
- - [ ] A `annotations` table consisting of 
-    - status_id
-    - **annotation
+- [x] Build a basic local datastore that can support the storage needs of other classes.  It will need:
+ - [x] A `tweets` table
+
 
 ### Create Twitter Accounts
 
@@ -98,3 +95,6 @@ listener.get_recent_tweets(6) #retreives tweets
 - [ ] What's a Twitter bot anyway?: An MVP Twitter bot that anyone can use
 - [ ] What should your bot say?: Markov is just fancy name for autocomplete
 - [ ] Kanye autocompletes your social strategy: A simple rules-based markov bot for Socal Media Week.
+
+### Server
+- [x] git deployment on production server
