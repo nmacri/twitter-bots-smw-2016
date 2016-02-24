@@ -7,7 +7,7 @@ def get_listener():
     instantate the listener and backfill recent tweets
     """
     smw_listener = TwitterListener('smw', 
-                                   query='#SMWNYC OR #SMWbot OR @SmwKanye')
+                                   query='#SMWNYC OR "social media week" OR @SMWNYC OR #SMWbot OR @SmwKanye')
     try:
         smw_listener.backfill()
     except:
@@ -27,15 +27,15 @@ def get_smw_seed_generators():
     smw_program_text = " ".join([t['name']+" "+t['description'] for t in talks])
     smw_program_text = smw_program_text + "\n".join([l for l in f.readlines()])
     f.close()
-    smw_tweet_text_all = smw_listener.get_recent_text(500)
-    smw_tweet_text_recent = smw_listener.get_recent_text(20)
+    smw_tweet_text_all = smw_listener.get_recent_text(1000)
+    smw_tweet_text_recent = smw_listener.get_recent_text(25)
 
     # make some markov babblers
     smw_program_babbler = MarkovBabbler(smw_program_text)
     smw_all_tweets_babbler = MarkovBabbler(smw_tweet_text_all)
     smw_recent_tweets_babbler = MarkovBabbler(smw_tweet_text_recent)
-    return [smw_program_babbler,
-            smw_all_tweets_babbler]#,
+    return [smw_program_babbler]#,
+            #smw_all_tweets_babbler,
             #smw_recent_tweets_babbler]
 
 def generate_text(seed_generator, in_reply_to=None):
@@ -66,10 +66,21 @@ if __name__ == '__main__':
         text = generate_text(None, in_reply_to=mention)
         kanye.tweet(text, in_reply_to=mention)
 
-    if random.random() < .5:
-        seed_generator = seed_generators[0]
-    else:
-        seed_generator = random.choice(seed_generators)
+    # reply to topical tweets
+    try:
+        query = """
+        (#smwnyc OR "social media" OR "twitter bots" OR "automation" OR #SMWbots OR #SMWbots OR bot OR bots)
+        """
+        topical_tweets = kanye._api_client.GetSearch(query)
+        for tweet in topical_tweets:
+            if not kanye.has_replied(tweet):
+                text = generate_text(None, in_reply_to=tweet)
+                kanye.tweet(text, in_reply_to=tweet)
+    except Exception, e:
+        print str(e)
+        pass
+
+    seed_generator = random.choice(seed_generators)
     text = generate_text(seed_generator)
     kanye.tweet(text)
 
