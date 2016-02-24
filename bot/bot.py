@@ -48,7 +48,7 @@ class TwitterBot(object):
             assert(type(in_reply_to) == twitter.status.Status)
             self.db.store(in_reply_to)
             reply_text = '@%s %s' % (in_reply_to.user.screen_name, text)
-            reply_text.replace('@%s' % self.__account['screen_name'])
+            reply_text.replace('@%s ' % self.__account['screen_name'],'')
             tweet = self._api_client.PostUpdate(reply_text, in_reply_to_status_id = str(in_reply_to.id))
 
         self.db.store(tweet)
