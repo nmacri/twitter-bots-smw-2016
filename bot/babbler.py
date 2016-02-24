@@ -60,7 +60,7 @@ class MarkovBabbler(object):
             raise Exception("can not generate text efficiently too many tries")
 
     def generate_seed(self):
-        seed = " ".join(self.generate().strip().split(" ")[0:random.randint(2,6)])
+        seed = " ".join(self.generate().strip().split(" ")[0:random.randint(3,6)])
         regex = re.compile('[%s]' % re.escape('!"$%&\'()*+,-./:;<=>?[\\]^`{|}~'))
         return regex.sub('', seed).capitalize()
 
