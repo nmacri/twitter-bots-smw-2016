@@ -63,12 +63,13 @@ if __name__ == '__main__':
 
     kanye_babbler = get_kanye_babbler()
 
-    # reply to outstanding mentions
-    mentions_not_replied_to = kanye.get_mentions_not_replied_to()
-    print mentions_not_replied_to
-    for mention in mentions_not_replied_to:
-        text = generate_text(None, in_reply_to=mention)
-        kanye.tweet(text, in_reply_to=mention)
+    if random.random() < .2:
+        # reply to outstanding mentions
+        mentions_not_replied_to = kanye.get_mentions_not_replied_to()
+        print mentions_not_replied_to
+        for mention in mentions_not_replied_to:
+            text = generate_text(None, in_reply_to=mention)
+            kanye.tweet(text, in_reply_to=mention)
 
     should_i_tweet_now = {0: 0.041666666666666671,
                          1: 0.041666666666666671,
