@@ -88,7 +88,7 @@ listener.get_recent_tweets(6) #retreives tweets
 - [x] 3-4 test interlocutors
 
 ### Testing Plans
-- [ ] A fake dataset for testing schedule-driven tweets
+- [x] A fake dataset for testing schedule-driven tweets
 
 ### Notebooks
 - [x] Setting Up a Twitter Bot in 5 Easy Steps
@@ -98,3 +98,17 @@ listener.get_recent_tweets(6) #retreives tweets
 
 ### Server
 - [x] git deployment on production server
+
+### Slides
+- [ ] Reaveal templates and build framework
+
+### Examples
+- [ ] Node app working locally
+- [ ] Node app working on gh-pages
+- [ ] Training selectors on node app
+
+### Documentation
+- [ ] Docstrings on framework library
+- [ ] Readme description of framework library
+
+
