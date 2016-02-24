@@ -51,7 +51,7 @@ def generate_text(seed_generator, in_reply_to=None):
 
 if __name__ == '__main__':
     # instantiate the bot
-    kanye = TwitterBot('test1')
+    kanye = TwitterBot('test2')
     kanye.generate_text = generate_text
 
     smw_listener = get_listener()
