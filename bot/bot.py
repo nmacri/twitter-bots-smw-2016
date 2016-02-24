@@ -66,7 +66,7 @@ class TwitterBot(object):
         try:
             mentions = self._api_client.GetMentions(count=200)
             self.db.store(mentions)
-            mentions = [t for t in mentions if t.user.id != self.__account['user_id']]
+            mentions = [t for t in mentions if int(t.user.id) != int(self.__account['user_id'])]
             return [tweet for tweet in mentions if not self.has_replied(tweet)]
         except Exception, e:
             return []
