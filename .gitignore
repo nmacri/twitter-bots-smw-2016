@@ -2,7 +2,7 @@
 secrets.json
 
 # SQLite dbs
-.db
+*.db
 
 # OS X Junk
 .DS_Store
