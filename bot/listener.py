@@ -54,9 +54,12 @@ class TwitterListener(object):
         """ 
         tweets = self._api_client.GetSearch(term=self.query, count=100, result_type='recent')
         if since_id:
-            while min([t.id for t in tweets]) > since_id:
-                more_tweets = self._api_client.GetSearch(term=self.query, count=100, result_type='recent', since_id=since_id)
-                tweets.extend(more_tweets)
+            try:
+                while min([t.id for t in tweets]) > since_id:
+                    more_tweets = self._api_client.GetSearch(term=self.query, count=100, result_type='recent', since_id=since_id)
+                    tweets.extend(more_tweets)
+            except Exception, e:
+                pass
         return tweets
 
     def backfill(self):

@@ -60,8 +60,8 @@ class MarkovBabbler(object):
             raise Exception("can not generate text efficiently too many tries")
 
     def generate_seed(self):
-        seed = " ".join(self.generate().strip().split(" ")[0:random.randint(2,5)])
-        regex = re.compile('[%s]' % re.escape(string.punctuation))
+        seed = " ".join(self.generate().strip().split(" ")[0:random.randint(2,6)])
+        regex = re.compile('[%s]' % re.escape('!"$%&\'()*+,-./:;<=>?[\\]^`{|}~'))
         return regex.sub('', seed).capitalize()
 
     def train(self, training_text):

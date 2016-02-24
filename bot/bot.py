@@ -22,15 +22,24 @@ class TwitterBot(object):
         self.__backfill_db()
 
     def __backfill_db(self):
-        tweets = self._api_client.GetUserTimeline(user_id=self.__account['user_id'], count = 200)
-        self.db.store(tweets)
+        try:
+            tweets = self._api_client.GetUserTimeline(user_id=self.__account['user_id'], count = 200)
+            self.db.store(tweets)
+        except Exception, e:
+            pass
+
+    def generate_text(self, in_reply_to=None):
+        """
+        extend this method with your generator
+        """
+        return "override this method in the TwitterBot class to generate your text"
 
     def tweet(self, text, in_reply_to=None):
         """
         posts an update as the authenticated user
 
         Args:
-        in_reply_to: a Twitter.Status object
+            in_reply_to: a Twitter.Status object
         """
 
         if in_reply_to == None:
@@ -43,10 +52,6 @@ class TwitterBot(object):
 
         self.db.store(tweet)
         return tweet
-
-
-    def generate_text(self, in_reply_to=None):
-        return "you should overide this method"
         
     def has_replied(self, tweet):
         sql = """
@@ -56,4 +61,15 @@ class TwitterBot(object):
         curs = self.db._TweetDatastore__conn.cursor()
         curs.execute(sql, (str(tweet.id),))
         return curs.fetchone()[0] > 0
+
+    def get_mentions_not_replied_to(self):
+        try:
+            mentions = self._api_client.GetMentions(count=200)
+            self.db.store(mentions)
+            return [tweet for tweet in mentions if not self.has_replied(tweet)]
+        except Exception, e:
+            return []
+        
+
+
 
