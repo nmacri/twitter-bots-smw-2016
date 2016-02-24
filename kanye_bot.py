@@ -1,6 +1,7 @@
 from bot import TwitterBot, MarkovBabbler, TwitterListener
 import json
 import random
+from datetime import datetime
 
 def get_listener():
     """
@@ -41,7 +42,10 @@ def get_smw_seed_generators():
 def generate_text(seed_generator, in_reply_to=None):
     try:
         if in_reply_to:
-            seed = MarkovBabbler(in_reply_to.text).generate_seed()
+            if random.random() < .5:
+                seed = MarkovBabbler(in_reply_to.text).generate_seed()
+            else:
+                seed = kanye_babbler.generate_seed()
         else: 
             seed = seed_generator.generate_seed()
         tweet_text = kanye_babbler.generate(seed=seed)
@@ -66,39 +70,46 @@ if __name__ == '__main__':
         text = generate_text(None, in_reply_to=mention)
         kanye.tweet(text, in_reply_to=mention)
 
-    {0: 0.05,
-     1: 0.05,
-     2: 0.04,
-     3: 0.01,
-     4: 0.01,
-     12: 0.06,
-     13: 0.05,
-     14: 0.12,
-     15: 0.14,
-     16: 0.19,
-     17: 0.23,
-     18: 0.27,
-     19: 0.22,
-     20: 0.28,
-     21: 0.11,
-     22: 0.10,
-     23: 0.07}
+    should_i_tweet_now = {0: 0.083333333333333343,
+                          1: 0.083333333333333343,
+                          2: 0.066666666666666666,
+                          3: 0.016666666666666666,
+                          4: 0.016666666666666666,
+                          12: 0.10000000000000001,
+                          13: 0.083333333333333343,
+                          14: 0.20000000000000001,
+                          15: 0.23333333333333336,
+                          16: 0.31666666666666665,
+                          17: 0.38333333333333336,
+                          18: 0.45000000000000007,
+                          19: 0.36666666666666664,
+                          20: 0.46666666666666673,
+                          21: 0.18333333333333332,
+                          22: 0.16666666666666669,
+                          23: 0.11666666666666668}
 
-    # reply to topical tweets
-    try:
-        query = """
-        (#smwnyc OR "social media" OR "twitter bots" OR "automation" OR #SMWbots OR #SMWbots OR bot OR bots)
-        """
-        topical_tweets = kanye._api_client.GetSearch(query)
-        for tweet in topical_tweets:
-            if not kanye.has_replied(tweet):
-                text = generate_text(None, in_reply_to=tweet)
-                kanye.tweet(text, in_reply_to=tweet)
-    except Exception, e:
-        print str(e)
-        pass
+    if random.random() < should_i_tweet_now[datetime.now().hour]:
 
-    seed_generator = random.choice(seed_generators)
-    text = generate_text(seed_generator)
-    # kanye.tweet(text)
+        seed_generator = random.choice(seed_generators)
+
+
+        # reply to topical tweets
+        try:
+            query = """
+            (#smwnyc OR "social bots" OR "twitter bots" OR "twitter bot" OR "social bot" OR "automation" OR #SMWbots OR #SMWbot)
+            """
+            topical_tweets = kanye._api_client.GetSearch(query)
+            for tweet in topical_tweets:
+                if not kanye.should_reply(tweet):
+                    text = generate_text(seed_generator, in_reply_to=tweet)
+                    kanye.tweet(text, in_reply_to=tweet)
+
+        except Exception, e:
+            print str(e)
+            pass
+        
+        text = generate_text(seed_generator)
+        # kanye.tweet(text)
+    else:
+        print "not going to tweet now"
 

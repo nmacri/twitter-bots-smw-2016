@@ -55,10 +55,13 @@ class TwitterBot(object):
         self.db.store(tweet)
         return tweet
         
-    def has_replied(self, tweet):
+    def should_reply(self, tweet):
         sql = """
-        SELECT count(status_id) from tweets
-        where in_reply_to_status_id = ?
+        SELECT count(tweets.status_id) 
+        FROM tweets
+        JOIN annotations on annotations.status_id = tweets.status_id
+        WHERE in_reply_to_status_id = ?
+        AND annotations.annotation != 'do not reply'
         """ 
         curs = self.db._TweetDatastore__conn.cursor()
         curs.execute(sql, (str(tweet.id),))
@@ -69,7 +72,11 @@ class TwitterBot(object):
             mentions = self._api_client.GetMentions(count=200)
             self.db.store(mentions)
             mentions = [t for t in mentions if int(t.user.id) != int(self.__account['user_id'])]
-            return [tweet for tweet in mentions if not self.has_replied(tweet)]
+            for mention in mentions:
+                if random.random > .8:
+                    # prevents reply loops
+                    kanye.db.annotate(tweet, "do not reply")
+            return [tweet for tweet in mentions if not self.should_reply(tweet)]
         except Exception, e:
             return []
         

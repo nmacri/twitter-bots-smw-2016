@@ -41,6 +41,15 @@ class TweetDatastore(object):
         curs.execute(sql)
         self.__conn.commit()
 
+        sql = """
+        CREATE TABLE IF NOT EXISTS `annotations` (
+            `status_id` bigint(36) PRIMARY KEY NOT NULL,
+            `annotation` varchar(145) NOT NULL DEFAULT '');
+        """
+        curs = self.__conn.cursor()
+        curs.execute(sql)
+        self.__conn.commit()
+
     def __flatten_tweet(self, tweet):
         return {"status_id": str(tweet.id),
                 "text": tweet.text,
@@ -76,6 +85,16 @@ class TweetDatastore(object):
 
         curs = self.__conn.cursor()
         curs.executemany(sql,flat_tweets)
+        curs.close()
+        self.__conn.commit()
+
+    def annotate(self, tweet, annotation):
+        sql = """
+        INSERT OR IGNORE INTO annotations (status_id,annotation)
+        VALUES (?,?)
+        """
+        curs = self.__conn.cursor()
+        curs.execute(sql,(tweet.id, annotation))
         curs.close()
         self.__conn.commit()
         
