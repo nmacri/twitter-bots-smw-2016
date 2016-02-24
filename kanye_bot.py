@@ -96,7 +96,7 @@ if __name__ == '__main__':
         # reply to topical tweets
         try:
             query = """
-            (#smwnyc OR "social bots" OR "social media week" OR "twitter bots" OR "twitter bot" OR "social bot" OR "automation" OR #SMWbots OR #SMWbot)
+            (#smwnyc OR "social bots" OR "social media week" OR "twitter bots" OR "twitter bot" OR "social bot" OR #SMWbots OR #SMWbot)
             """
             topical_tweets = kanye._api_client.GetSearch(query)
             for tweet in topical_tweets:
