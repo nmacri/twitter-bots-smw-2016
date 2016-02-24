@@ -35,9 +35,9 @@ def get_smw_seed_generators():
     smw_program_babbler = MarkovBabbler(smw_program_text)
     smw_all_tweets_babbler = MarkovBabbler(smw_tweet_text_all)
     smw_recent_tweets_babbler = MarkovBabbler(smw_tweet_text_recent)
-    return [smw_program_babbler]#,
-            #smw_all_tweets_babbler,
-            #smw_recent_tweets_babbler]
+    return [smw_program_babbler,
+            smw_all_tweets_babbler,
+            smw_recent_tweets_babbler]
 
 def generate_text(seed_generator, in_reply_to=None):
     try:
