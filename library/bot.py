@@ -76,6 +76,7 @@ class TwitterBot(object):
                 if random.random() > .8:
                     # prevents reply loops
                     self.db.annotate(mention, "do not reply")
+                    self._api_client.CreateFavorite(status=mention)
             return [tweet for tweet in mentions if not self.should_reply(tweet)]
         except Exception, e:
             print str(e)
