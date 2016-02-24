@@ -5,6 +5,11 @@ Slides, examples and code for "build-a-bot workshop" at Social Media Week NYC 20
 
 http://socialmediaweek.org/newyork/events/twitter-bots/
 
+### Features
+- An extensible python-based framework for standing up simple MVP twitter bots
+- [Slides](http://nmacri.github.io/twitter-bots-smw-2016/examples/app/) from Nick's Talk "Twitter Bots and The Automation of Everything" at Social Media Week NYC February 22, 2015
+- [Tutorial Notebooks](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/) walking through the process of building a bot
+
 ## Getting Started
 
 ### Tutorial Notebooks
