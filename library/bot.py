@@ -1,6 +1,6 @@
 import twitter
 import json
-
+import random
 from datastore import TweetDatastore
 
 f = open('secrets.json','rb')
@@ -73,11 +73,12 @@ class TwitterBot(object):
             self.db.store(mentions)
             mentions = [t for t in mentions if int(t.user.id) != int(self.__account['user_id'])]
             for mention in mentions:
-                if random.random > .8:
+                if random.random() > .8:
                     # prevents reply loops
-                    self.db.annotate(tweet, "do not reply")
+                    self.db.annotate(mention, "do not reply")
             return [tweet for tweet in mentions if not self.should_reply(tweet)]
         except Exception, e:
+            print str(e)
             return []
         
 
