@@ -92,7 +92,6 @@ if __name__ == '__main__':
 
         seed_generator = random.choice(seed_generators)
 
-
         # reply to topical tweets
         try:
             query = """
@@ -100,9 +99,10 @@ if __name__ == '__main__':
             """
             topical_tweets = kanye._api_client.GetSearch(query)
             for tweet in topical_tweets:
-                if not kanye.should_reply(tweet):
-                    text = generate_text(seed_generator, in_reply_to=tweet)
-                    kanye.tweet(text, in_reply_to=tweet)
+                if random.random() < .07:
+                    if not kanye.should_reply(tweet):
+                        text = generate_text(seed_generator, in_reply_to=tweet)
+                        kanye.tweet(text, in_reply_to=tweet)
 
         except Exception, e:
             print str(e)
