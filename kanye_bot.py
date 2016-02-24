@@ -66,6 +66,24 @@ if __name__ == '__main__':
         text = generate_text(None, in_reply_to=mention)
         kanye.tweet(text, in_reply_to=mention)
 
+    {0: 0.05,
+     1: 0.05,
+     2: 0.04,
+     3: 0.01,
+     4: 0.01,
+     12: 0.06,
+     13: 0.05,
+     14: 0.12,
+     15: 0.14,
+     16: 0.19,
+     17: 0.23,
+     18: 0.27,
+     19: 0.22,
+     20: 0.28,
+     21: 0.11,
+     22: 0.10,
+     23: 0.07}
+
     # reply to topical tweets
     try:
         query = """
@@ -82,5 +100,5 @@ if __name__ == '__main__':
 
     seed_generator = random.choice(seed_generators)
     text = generate_text(seed_generator)
-    kanye.tweet(text)
+    # kanye.tweet(text)
 
