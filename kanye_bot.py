@@ -55,7 +55,7 @@ def generate_text(seed_generator, in_reply_to=None):
 
 if __name__ == '__main__':
     # instantiate the bot
-    kanye = TwitterBot('test2')
+    kanye = TwitterBot('production')
     kanye.generate_text = generate_text
 
     smw_listener = get_listener()
@@ -96,7 +96,7 @@ if __name__ == '__main__':
         # reply to topical tweets
         try:
             query = """
-            (#smwnyc OR "social bots" OR "twitter bots" OR "twitter bot" OR "social bot" OR "automation" OR #SMWbots OR #SMWbot)
+            (#smwnyc OR "social bots" OR "social media week" OR "twitter bots" OR "twitter bot" OR "social bot" OR "automation" OR #SMWbots OR #SMWbot)
             """
             topical_tweets = kanye._api_client.GetSearch(query)
             for tweet in topical_tweets:
