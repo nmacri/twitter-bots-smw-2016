@@ -33,8 +33,8 @@ class MarkovBabbler(object):
                 print "Text Candidate rejected for length > 140: %s" % text_candidate
                 return False
 
-            if text_candidate == '':
-                print "Text Candidate rejected for 0 length"
+            if len(text_candidate) < 15:
+                print "Text Candidate rejected for length <15"
                 return False
         except Exception, e:
             print str(e)
