@@ -105,7 +105,7 @@ if __name__ == '__main__':
             """
             topical_tweets = kanye._api_client.GetSearch(query)
             for tweet in topical_tweets:
-                if random.random() < .07:
+                if random.random() < .05:
                     if not kanye.should_reply(tweet):
                         text = generate_text(seed_generator, in_reply_to=tweet)
                         kanye.tweet(text, in_reply_to=tweet)
