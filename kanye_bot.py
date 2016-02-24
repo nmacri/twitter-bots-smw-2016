@@ -109,7 +109,7 @@ if __name__ == '__main__':
             pass
         
         text = generate_text(seed_generator)
-        # kanye.tweet(text)
+        kanye.tweet(text)
     else:
         print "not going to tweet now"
 
