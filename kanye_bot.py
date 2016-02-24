@@ -1,4 +1,4 @@
-from bot import TwitterBot, MarkovBabbler, TwitterListener
+from library import TwitterBot, MarkovBabbler, TwitterListener
 import json
 import random
 from datetime import datetime

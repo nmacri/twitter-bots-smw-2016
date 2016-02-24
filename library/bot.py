@@ -75,7 +75,7 @@ class TwitterBot(object):
             for mention in mentions:
                 if random.random > .8:
                     # prevents reply loops
-                    kanye.db.annotate(tweet, "do not reply")
+                    self.db.annotate(tweet, "do not reply")
             return [tweet for tweet in mentions if not self.should_reply(tweet)]
         except Exception, e:
             return []
