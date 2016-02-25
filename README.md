@@ -139,10 +139,10 @@ listener.get_recent_tweets(6) #retreives tweets
 ### Examples
 - [x] Node app working locally
 - [x] Node app working on gh-pages
-- [ ] Training selectors on node app
+- [x] Training selectors on web app
 
 ### Documentation
 - [ ] Docstrings on framework library
-- [ ] Readme description of framework library
+- [x] Readme description of framework library
 
 
