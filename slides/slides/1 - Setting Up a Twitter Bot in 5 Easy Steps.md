@@ -1,3 +1,8 @@
+
+![](http://www.explainxkcd.com/wiki/images/b/b2/twitter_bot.png)
+
+---
+
 # Setting Up a Twitter Bot in 5 Easy Steps
 
 1. Get our project directory organized
@@ -5,10 +10,6 @@
 3. Make a Twitter account
 4. OAuth secret handshake
 5. Store our secrets somewhere safe
-
----
-
-![](http://www.explainxkcd.com/wiki/images/b/b2/twitter_bot.png)
 
 ---
 

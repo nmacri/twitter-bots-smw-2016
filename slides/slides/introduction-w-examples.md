@@ -1,12 +1,16 @@
 ##Let's build a twitter bot!
 
+
+
 - These Slides http://nmacri.github.io/twitter-bots-smw-2016/slides
 
 - Tutorial Notebooks http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/
 
-- Code & Examples https://github.com/nmacri/twitter-bots-smw-2016/
-
 - The Bot https://twitter.com/SMWkanye
+
+- An extensible python-based framework for standing up simple MVP twitter bots https://github.com/nmacri/twitter-bots-smw-2016/
+
+
 
 Note: 4 ways in / want to show is that this is a very democratic technology / leave up / 
 
@@ -83,9 +87,9 @@ Note: Our bot will post, replys and favorite / those might note be the most valu
 
 ---
 
-"Users flag content for us through our standard reporting channels. We review their reports manually and take action if the content violates our rules,” the Twitter spokesperson said. “We don't review Anonymous lists posted online, but third-party reviews have found them to be <span style="color:#D75F45">wildly inaccurate and full of academics and journalists.</span>"
+"Users flag content for us through our standard reporting channels. We review their reports manually and take action if the content violates our rules,” <span style="color:#555555">the Twitter spokesperson said.</span> “We don't review Anonymous lists posted online, but third-party reviews have found them to be <span style="color:#D75F45">wildly inaccurate and full of academics and journalists.</span>"
 
-- http://www.ibtimes.com/anonymous-isis-operation-twitter-lists-are-wildly-inaccurate-causing-headaches-2196044
+<small>http://www.ibtimes.com/anonymous-isis-operation-twitter-lists-are-wildly-inaccurate-causing-headaches-2196044</small>
 
 Note: morally neutral so it's important 
 
