@@ -154,7 +154,7 @@ session = tw_oauth_service.get_auth_session(request_token,
 ### Step 5: Store your secrets somewhere safe
 
 
-<section id="majorkey3" data-state="majorkey3" style="bottom:50px; display: block;"> major :key: -> secrets.json </section>
+<section id="majorkey3" data-state="majorkey3" style="bottom:50px; display: block;"> :key: :key: :key: :key: -> secrets.json </section>
 
 ---
 
