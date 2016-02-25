@@ -50,7 +50,7 @@ function do_line() {
 
     text = document.markov.generateSentences(1)[0];
 
-    if (n > 20 && n > 1) {
+    if (n > 10 && n > 1) {
         main.removeChild(document.getElementById('main').firstChild);
     }
 
