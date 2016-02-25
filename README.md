@@ -7,33 +7,49 @@ http://socialmediaweek.org/newyork/events/twitter-bots/
 
 ### Features
 - An extensible python-based framework for standing up simple MVP twitter bots
-- [Slides](http://nmacri.github.io/twitter-bots-smw-2016/examples/app/) from Nick's Talk "Twitter Bots and The Automation of Everything" at Social Media Week NYC February 22, 2015
+- [Slides](http://nmacri.github.io/twitter-bots-smw-2016/slides) from Nick's Talk "Twitter Bots and The Automation of Everything" at Social Media Week NYC February 22, 2015
 - [Tutorial Notebooks](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/) walking through the process of building a bot
+- Production code for [@SmwKanye](http://twitter.com/SmwKanye) A simple rules-based markov twitter bot for Social Media Week NYC 2016.
 
 ## Getting Started
 
+### The Bot
+
+[@SmwKanye](http://twitter.com/SmwKanye) is built from the following compontents, all of which are contained in the `/library` module.  Rules are spaghetti-coded together in `kanye_bot.py` and it runs on a once-a-minute cron job.
+
+- Four `MarkovBabbler`, trained on different text data sets
+  - <small>Recent SMW Tweets</small>
+  - <small>All SMW Tweets</small>
+  - <small>The SMW Theme Manifesto + Event Titles & Descriptions</small>
+  - <small>A lot of Kanye text (tweets, interviews, lyrics, etc.)</small>
+- Two `TwitterListeners` subscribed to the following queries
+  - <small>'#SMWNYC OR "social media week" OR @SMWNYC OR #SMWbot OR @SmwKanye'</small>
+  - <small>(#smwnyc OR "social bots" OR "social media week" OR "twitter bots" OR "twitter bot" OR "social bot" OR #SMWbots OR #SMWbot)</small>
+- One production `TwitterBot` and three test bots
+
+### Slides
+
+[Slides from Nick's Talk "Twitter Bots and The Automation of Everything" at Social Media Week NYC February 22, 2015](http://nmacri.github.io/twitter-bots-smw-2016/slides)
+
+The default keyboard shortcuts are:
+
+- Up, Down, Left, Right: Navigation
+- f: Full-screen
+- s: Show slide notes
+- o: Toggle overview
+- . (Period or b: Turn screen black
+- Esc: Escape from full-screen, or toggle overview
+
 ### Tutorial Notebooks
+
 1. [Setting Up a Twitter Bot in 5 Easy Steps](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb)
  1. [Get you project directory organized](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#1.-First-things-first,-let's-get-our-project-directory-organized)
  2. [Register a Twitter app](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#2.-Good,-that-went-smoothly,-now-let's-go-deal-with-twitter)
  3. [Create a Twitter account](https://twitter.com/signup)
  4. [OAuth secret handshake](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#4.-Final-OAuth-step:-Secret-handshake!)
  5. [Store your secrets somewhere safe](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/1%20-%20Setting%20Up%20a%20Twitter%20Bot%20in%205%20Easy%20Steps.ipynb#5.-Store-your-secrets-somewhere-safe)
-2. What's a Twitter bot anyway?: An MVP Twitter bot that anyone can use
-3. What should your bot say?: Markov is just fancy name for autocomplete
-4. Kanye autocompletes your social strategy: A simple rules-based markov bot for Socal Media Week.
-
-### Slides
-
-The default keyboard shortcuts are:
-
-Up, Down, Left, Right: Navigation
-f: Full-screen
-s: Show slide notes
-o: Toggle overview
-. (Period or b: Turn screen black
-Esc: Escape from full-screen, or toggle overview
-These can be overridden; see Readme.md.
+2. [What's a Twitter bot anyway?: An MVP Twitter bot that anyone can use](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/2%20-%20An%20MVP%20Twitter%20bot%20that%20anyone%20can%20use.ipynb)
+3. [What should your bot say?: Markov is just fancy name for autocomplete](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/blob/master/notebooks/3%20-%20What%20should%20your%20bot%20say%3F.ipynb)
 
 ### Using this Repo to build your own bot
 
@@ -109,19 +125,19 @@ listener.get_recent_tweets(6) #retreives tweets
 
 ### Notebooks
 - [x] Setting Up a Twitter Bot in 5 Easy Steps
-- [ ] What's a Twitter bot anyway?: An MVP Twitter bot that anyone can use
-- [ ] What should your bot say?: Markov is just fancy name for autocomplete
-- [ ] Kanye autocompletes your social strategy: A simple rules-based markov bot for Socal Media Week.
+- [x] What's a Twitter bot anyway?: An MVP Twitter bot that anyone can use
+- [x] What should your bot say?: Markov is just fancy name for autocomplete
+- [x] Kanye autocompletes your social strategy: A simple rules-based markov bot for Socal Media Week.
 
 ### Server
 - [x] git deployment on production server
 
 ### Slides
-- [ ] Reaveal templates and build framework
+- [x] Reaveal templates and build framework
 
 ### Examples
-- [ ] Node app working locally
-- [ ] Node app working on gh-pages
+- [x] Node app working locally
+- [x] Node app working on gh-pages
 - [ ] Training selectors on node app
 
 ### Documentation

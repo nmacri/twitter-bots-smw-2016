@@ -1,24 +1,22 @@
 ##Let's build a twitter bot!
 
-
-
 - These Slides http://nmacri.github.io/twitter-bots-smw-2016/slides
 
-- Tutorial Notebooks http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/
+- The Bot https://twitter.com/SmwKanye
 
-- The Bot https://twitter.com/SMWkanye
+- Tutorial Notebooks http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/
 
 - An extensible python-based framework for standing up simple MVP twitter bots https://github.com/nmacri/twitter-bots-smw-2016/
 
 
 
-Note: 4 ways in / want to show is that this is a very democratic technology / leave up / 
+Note: Things you can play with while I talk (or after) / 4 ways in / want to show is that this is a very democratic technology / 
 
 ---
 
 # Hi, I'm Nick
 
-Note: Hi I'm nick / Code and theory / Shovel the data / And so I built a bot
+Note: Hi I'm nick / Code and theory / Shovel the data / wanted activate on it / And so I built my first bot
 
 
 ---

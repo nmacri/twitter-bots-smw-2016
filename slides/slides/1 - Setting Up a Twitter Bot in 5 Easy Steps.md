@@ -128,7 +128,7 @@ Note: **If you're cool w/ it, authorize your app** against your bot user you wil
 
 ![](http://cl.ly/3R3S3r3a2h0k/Image%202016-02-24%20at%206.23.05%20PM.png)
 
-**It will like an error, but it's not!**
+**It will look like an error, but it's not!**
 
 Note: all you need to do is parse out two parameters from the url they bounce you back to: the `oauth_token` and the `oauth_verifier`.  
 
