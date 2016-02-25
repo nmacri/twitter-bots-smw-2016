@@ -8,8 +8,9 @@ http://socialmediaweek.org/newyork/events/twitter-bots/
 ### Features
 - An extensible python-based framework for standing up simple MVP twitter bots
 - [Slides](http://nmacri.github.io/twitter-bots-smw-2016/slides) from Nick's Talk "Twitter Bots and The Automation of Everything" at Social Media Week NYC February 22, 2015
-- [Tutorial Notebooks](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/) walking through the process of building a bot
+- Tutorial [Jupyter Notebooks](http://nbviewer.jupyter.org/github/nmacri/twitter-bots-smw-2016/tree/master/notebooks/) walking through the process of building a bot
 - Production code for [@SmwKanye](http://twitter.com/SmwKanye) A simple rules-based markov twitter bot for Social Media Week NYC 2016.
+- [A small web-app](http://nmacri.github.io/twitter-bots-smw-2016/examples/app/) example that lets you remix your own Markov Babblers
 
 ## Getting Started
 
@@ -57,7 +58,7 @@ The default keyboard shortcuts are:
     - **:confused: "huh, git what?"** --- don't sweat it, you can [download as a zip file](https://github.com/nmacri/twitter-bots-smw-2016/archive/master.zip) instead.
 2. cd to your project folder.  in my case it's `cd ~/twitter-bots-smw-2016`
 3. If you haven't already, install [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html) so you can run this in a clean python environment.
-    - **:confused: "err, python's not really my thing?"** ---- it's cool.  There's a javascript example [here](https://github.com/nmacri/twitter-bots-smw-2016/tree/master/examples) but it's kind of janky.  
+    - **:confused: "err, python's not really my thing?"** ---- it's cool.  There's a javascript example [here](http://nmacri.github.io/twitter-bots-smw-2016/examples/app/), but it's kind of janky.  
     - Here are a few things that are way more awesome and useful:
         - [Libraries that support the Twitter API](https://dev.twitter.com/overview/api/twitter-libraries)
         - [RiTa: A toolkit for computational literature](https://rednoise.org/rita/) implemented in Java and Javascript with integrations for Processing, Android, Note, P5.js, Broswerify, Bower, etc.
