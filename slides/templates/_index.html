@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
     
         <link rel="stylesheet" href="bower_components/reveal.js/css/theme/black.css" id="theme">
+
+        <script src="https://cdn.jsdelivr.net/embed.js/3.6.2/embed.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/embed.js/3.6.2/embed.min.css"/>
     
 
         <!-- For syntax highlighting -->
@@ -80,6 +83,48 @@
               { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
             ]
           });
+
+        (function() {
+
+            var renderEmoji = function() {
+                    Reveal.addEventListener('majorkey1', function() {
+                    var x = new EmbedJS({
+                        element: document.getElementById('majorkey1'),
+                    });
+
+                    x.render();
+                }, false);
+
+                Reveal.addEventListener('majorkey2', function() {
+                    var x = new EmbedJS({
+                        element: document.getElementById('majorkey2'),
+                    });
+
+                    x.render();
+                }, false);
+
+                Reveal.addEventListener('majorkey3', function() {
+                    var x = new EmbedJS({
+                        element: document.getElementById('majorkey3'),
+                    });
+
+                    x.render();
+                }, false);
+
+                Reveal.addEventListener('majorkey4', function() {
+                    var x = new EmbedJS({
+                        element: document.getElementById('majorkey4'),
+                    });
+
+                    x.render();
+                }, false);
+                };
+
+                renderEmoji();
+
+            })();
+
+        
 
         </script>
     </body>
