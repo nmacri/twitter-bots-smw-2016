@@ -96,7 +96,7 @@ if __name__ == '__main__':
                          22: 0.14583333333333334,
                          23: 0.10208333333333335}
 
-    if random.random() < should_i_tweet_now[datetime.now().hour]:
+    if random.random() < should_i_tweet_now[datetime.now().hour] and datetime.now() < datetime(2016,2,27):
 
         seed_generator = random.choice(seed_generators)
 
